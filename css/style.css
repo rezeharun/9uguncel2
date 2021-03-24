@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222;
+    font-family: 'Poppins', sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    .col {
+        float: left;
+        width: 50%;
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+    .col {
+        float: left;
+        width: 33.33333%;
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+
+/*navbar*/
+
+nav {
+    position: fixed;
+    width: 100%;
+    color: #fff;
+    padding-top: .9rem;
+    padding-bottom: .9rem;
+    font-family: "Montserrat", sans-serif;
+    background-color: #222;
+    font-weight: 700;
+    z-index: 999;
+}
+
+#logo-box {
+    float: left;
+    padding-top: .5rem;
+}
+
+#logo-box .logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+#nav-links {
+    float: right;
+}
+
+#nav-links .nav-item {
+    float: left;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    display: block;
+    padding: 1rem;
+    letter-spacing: .1rem;
+    transition: color .3s;
+}
+
+.nav-item a {
+    color: #fff;
+}
+
+#nav-links .nav-link:hover {
+    color: #18bc9c;
+}
+
+#nav-links .nav-link {
+    transition: color .3s;
+}
+
+#nav-links .nav-icon {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    nav {
+        padding-bottom: 0;
+    }
+    #logo-box {
+        float: none;
+        text-align: left;
+    }
+    #nav-links {
+        float: none;
+    }
+    #nav-links.responsive li:not(:first-child) {
+        display: none;
+    }
+    #nav-links .nav-link {
+        font-size: 2rem;
+        padding-left: 0;
+    }
+    #nav-links .nav-item {
+        float: none;
+        text-align: left;
+    }
+    #nav-links .nav-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 1400px) {
+    nav {
+        padding-bottom: 0;
+    }
+    #logo-box {
+        float: none;
+        text-align: left;
+    }
+    #nav-links {
+        float: none;
+    }
+    #nav-links.responsive li:not(:first-child) {
+        display: none;
+    }
+    #nav-links .nav-link {
+        font-size: 1.2rem;
+        padding-left: 0;
+    }
+    #nav-links .nav-item {
+        float: none;
+        text-align: left;
+    }
+    #nav-links .nav-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        font-size: 3rem;
+    }
+}
+
+
+/*header*/
+
+header .bg-img {
+    position: absolute;
+    background-image: url(../img/books.svg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+    z-index: -1;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+}
+
+.container {
+    padding: 1rem
+}
+
+header h1 {
+    color: #fff;
+    padding-top: 2rem;
+}
+
+header p {
+    color: #fff;
+    padding-top: .5rem;
+}
+
+.buttons {
+    text-align: center;
+    padding: 15px;
+}
+
+.buttons button {
+    outline: none;
+    width: 200px;
+    font-weight: bold;
+    border-radius: 100px;
+    font-size: 20px;
+    padding: 1rem;
+    background: none;
+    color: #fff;
+    border: 5px solid #fff;
+    transition: .5s ease;
+}
+
+.buttons button:hover {
+    color: #333;
+    background: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+    nav a {
+        font-size: 8px;
+    }
+    .content {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .content p {
+        padding: 1rem;
+        width: 400px;
+        text-align: center;
+        font-size: .9rem;
+    }
+    .buttons button {
+        margin-top: 15px;
+        border: 5px solid #fff;
+    }
+    .buttons button:hover {
+        background: #fff;
+        color: #333;
+        border: 5px solid #fff;
+    }
+}
+
+table,
+th,
+td {
+    width: 100px;
+    padding: 1rem;
+    color: #fff;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+}
+
+.tcontainer {
+    padding: 50px
+}
+
+.bcontainer {
+    padding: 20px 20px 0 0;
+}
+
+.bcontainer button {
+    font-weight: 700;
+    font-size: 2rem;
+    width: 200px;
+    height: 100px;
+    margin: 5px;
+    padding: 10px;
+    border: 5px solid #fff;
+    cursor: pointer;
+    background: none;
+    border-radius: 17px;
+    color: #fff;
+    transition: .5s ease;
+}
+
+.bcontainer button:hover {
+    background: #fff;
+    color: #333;
+}
+
+header .container {
+    text-align: center;
+    width: 100%;
+    padding-top: calc(110px + 3rem);
+}
+
+header .tcontainer {
+    padding-top: calc(110px + 1rem);
+}
+
+header .bcontainer {
+    padding-top: calc(110px + 1rem);
+}
+
+.copy-btn {
+    border: none;
+    background: #913636;
+    font-weight: 600;
+    padding: 5px;
+    outline-color: white;
+    cursor: pointer;
+    color: white;
+    width: 100px;
+}
+
+.text-btn {
+    margin: 5px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #913636;
+    border-radius: 5px;
+    width: 200px;
+    font-weight: 600;
+    color: #fff;
+    background: #333;
+}
